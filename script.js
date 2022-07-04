@@ -14,7 +14,7 @@ function myFunction() {
 
 console.log(typeof yourFunction); // Expected output: undefined.
 
-yourFunction(); // Expected output: your function is not a function;
+yourFunction(); // Expected output: yourFunction is not a function;
 
 var yourFunction = function () {
   console.log("This is a function expression");
