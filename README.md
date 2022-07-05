@@ -22,7 +22,7 @@ Let us talk about the "Creation Phase".
 
 For GEC, an object which is called a "Global Object" is created. It stores variables and function declarations that sit lexically on the global level thanks to the parser. Also it has other properties about environment where the Javascript file run. For web browsers, that global object is equivalent to the browser's window object and stores variables and function declarations. For nodeJS, it is equivalent to another thing. (I haven't known NODE yet.)
 
-![Browser's window object.](./assets/window_object.png)
+![Browser's window object.](./img/window_object.png)
 
 Secondly, after the global object, the scope chain is created by the engine. The scope chain allows us to use variables which are defined in its scope and outer scopes.
 
