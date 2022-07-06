@@ -20,7 +20,7 @@ Let us talk about the "Creation Phase".
 
 ### The Creation Phase for GEC
 
-For GEC, an object which is called a "Global Object" is created. It stores variables and function declarations that sit lexically on the global level thanks to the parser. Also it has other properties about environment where the Javascript file run. For web browsers, that global object is equivalent to the browser's window object and stores variables and function declarations. For nodeJS, it is equivalent to another thing. (I haven't known NODE yet.)
+For GEC, an object called a "Global Object" is created. It stores variables and function declarations that sit lexically on the global level thanks to the parser. Also it has other properties about environment where the Javascript file run. For web browsers, that global object is equivalent to the browser's window object and stores variables and function declarations. For nodeJS, it is equivalent to another thing. (I haven't known NODE yet.)
 
 ![Browser's window object.](./img/window_object.png)
 
@@ -30,16 +30,14 @@ Finally, the "this" keyword is created by the engine and the "this" keyword refe
 
 ### The Creation Phase for FEC
 
-For FEC, an object is created. This object contains the variables and function declarations which are defined in the function's scope and an array-like object which is called "argument" object. That object contains function's arguments. The "this" keyword and the scope chain is created as well.
+For FEC, an object is created. This object contains the variables and function declarations which are defined in the function's scope and an array-like object which is called "argument" object. That object contains function's arguments. The "this" keyword and the scope chain are created as well.
 
 ## So, What is hoisting?
 
 As we talked about in the creation phase of the execution context, an object contains the variables and function declarations. The engine scans the codes all the way down. When it encounters a variable, it stores that variable without its value. Instead, it adds a placeholder which is a special keyword "undefined". During the execution phase, the engine scans the codes again and dedicates the real value to variable. That's why when we want to use the variable before define it, we see "undefined" in the console.
 
-For function declarations, the situation is a little different. In the creation phase, the engine saves the function to the memory and during the execution phase we can access to that function before defining it.
+For function declarations, the situation is a little different. In the creation phase, the engine saves the function to the memory and during the execution phase we can access to that function before define it.
 
 The name of this operation is "hoisting". :)))
 
-!!
-
-WARNING: THIS IS NOT A FULL DETAILED HOISTING DOCUMENTATION. THIS IS NOT USED FOR EDUCATIONAL PURPOSES.
+WARNING: THIS IS NOT A FULL DETAILED HOISTING DOCUMENTATION. DO NOT USE FOR EDUCATIONAL PURPOSES.
